@@ -1,0 +1,43 @@
+{
+	"version": 8,
+	"name": "Demo style",
+	"center": [
+		50,
+		10
+	],
+	"zoom": 4,
+	"sources": {
+		"demotiles": {
+			"type": "vector",
+
+			"url": "https://maps.vietmap.vn/tm/{z}/{x}/{y}@2x.png?apikey=YOUR_API_KEY_HERE"
+		},
+		"tiles": {
+			"type": "vector",
+
+			"url": "https://maps.vietmap.vn/tm/{z}/{x}/{y}@2x.png?apikey=YOUR_API_KEY_HERE"
+		}
+	},
+	"sprite": "",
+	"glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+	"layers": [
+		{
+			"id": "background",
+			"type": "background",
+			"paint": {
+				"background-color": "rgba(255, 255, 255, 1)"
+			}
+		},
+		{
+			"id": "countries",
+			"type": "line",
+			"source": "demotiles",
+			"source-layer": "countries",
+			"paint": {
+				"line-color": "rgba(0, 0, 0, 1)",
+				"line-width": 1,
+				"line-opacity": 1
+			}
+		}
+	]
+}
