@@ -25,6 +25,8 @@ apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+	namespace 'vn.vietmap.vietmapgl'
+
     compileSdk 34
     ndkVersion "21.1.6352462"
 
